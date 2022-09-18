@@ -13,4 +13,7 @@ router.get("/:id", async (req, res) => {
     res.status(200).send({ message: "Invalid ShareLink" });
   }
 });
+router.get("/", async (req, res) => {
+  res.status(200).send("Api Is Working");
+})
 module.exports = router;
